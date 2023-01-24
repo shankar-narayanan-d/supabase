@@ -40,11 +40,13 @@ Run the following commands in sql script
 
 `ALTER function auth.email owner to supabase_auth_admin`
 
+`ALTER function auth.uid owner to supabase_auth_admin`
+
+`ALTER function auth.role owner to supabase_auth_admin`
+
 Then run
 `docker compose up`
 
 While running everstage-spm locally, if you are unable to up the docker server, 
 Add `RUN apk add g++ make py3-pip` in top of [file](https://github.com/Everstage/everstage-spm/blob/INTER-2727-supabase/interstage_project/frontend/Dockerfile.dev.frontend) 
-`ALTER function auth.uid owner to supabase_auth_admin`
 
-`ALTER function auth.role owner to supabase_auth_admin`
